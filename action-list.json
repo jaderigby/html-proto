@@ -1,0 +1,10 @@
+{
+     "toolName" : "html-proto"
+    ,"alias" : "html"
+    ,"actions" : [
+        {
+            "name": "-",
+            "description": "Run command. It accepts the following:\n\nname:\t\tSome string for the name. You can leave off the extension, 'html'"
+        }
+    ]
+}

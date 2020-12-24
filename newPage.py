@@ -3,8 +3,10 @@ import messages as msg
 
 # settings = helpers.get_settings()
 
-def execute(NAME):
-    base = os.path.expanduser('~')
+def execute(ARGS):
+    argDict = helpers.arguments(ARGS)
+    NAME = argDict['name']
+    base = helpers.root()
     cmd = 'mkdir ~/Documents/html'
     if os.path.isdir(base + '/Documents/html'):
         print("\nDirectory already exists. Moving on ...\n")
